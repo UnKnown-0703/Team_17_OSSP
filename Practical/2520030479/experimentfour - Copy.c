@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+pid_t pid;
+pid == fork();
+if(pid ==0)
+{
+printf("Child PID = %d\n", getpid());
+}
+else if (pid > 0)
+{
+printf("Parent PID = %d\n", getpid());
+printf("Child PID = %d\n", pid);
+}
+else
+{
+printf("Fork failed!\n");
+}
+return 0;
+}
+
+
+
